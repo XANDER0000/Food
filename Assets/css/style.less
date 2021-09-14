@@ -1,0 +1,44 @@
+// compress: true
+@import "vars";
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+    color: @black;
+    -webkit-font-smoothing: antialiased;
+
+    &.no-scroll {
+        overflow-y: hidden;
+    }
+}
+
+h1, h2, h3, h4, h4, h5 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Blocks ======================*/
+@import "blocks/header.less";
+@import "blocks/container.less";
+@import "blocks/btn.less";
+@import "blocks/intro.less";
+@import "blocks/about.less";
+@import "blocks/features.less";
+@import "blocks/download.less";
+@import "blocks/recipes.less";
+@import "blocks/footer.less";
+
+@import "helpers";

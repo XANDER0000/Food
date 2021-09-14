@@ -1,0 +1,125 @@
+// main: ../style.less
+
+.recipes {
+    padding: 120px 0 40px 0;
+    text-align: center;
+
+    @media @mobile {
+        padding: 70px 0 40px 0;
+    }
+}
+
+.recipes__subheading {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: .1em;
+    color: #F6762C;
+}
+
+.recipes__heading {
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 145%;
+    letter-spacing: .1em;
+    color: #190C05;
+    opacity: .8;
+}
+
+.recipes__content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 120px;
+
+    @media @tablet {
+        justify-content: center;
+    }
+}
+
+.recipes__col {
+    position: relative;
+    margin-bottom: 150px;
+    padding: 0 20px;
+    max-width: 360px;
+
+    flex-basis: 33.3333%;
+
+    @media @tablet {
+        flex-basis: 50%;
+    }
+
+    @media @mobile {
+        flex-basis: 100%;
+    }
+}
+
+.recipescol__content {
+    padding: 120px 30px 70px 30px;
+    border: 2px solid rgba(246, 118, 44, 0.2);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapper {
+    position: absolute;
+    top: -87.5px;
+}
+
+.recipes__img {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.recipes__price {
+    position: absolute;
+
+    background-color: @black;
+    color: @white;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    bottom: 0;
+    right: 0;
+
+    border-radius: 50%;
+    border: 2px solid @white;
+}
+
+.recipes__img__img {
+    width: 175px;
+    height: 175px;
+}
+
+.recipescol__heading {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 37px;
+    color: #190C05;
+    opacity: .8;
+
+    margin-bottom: 15px;
+}
+
+.recipescol__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #190C05;
+    opacity: .6;
+}
+
+.recipes__button {
+    position: absolute;
+}
